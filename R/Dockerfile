@@ -1,5 +1,7 @@
 FROM rocker/rstudio:latest
 
+#rocker/rstudio's workdir is /home/rstudio
+
 # Copy the package installation script into the image
 COPY install_packages.R /tmp/
 
@@ -12,5 +14,5 @@ ENV USER rstudio
 # Run the package installation script
 RUN Rscript /tmp/install_packages.R
 
-# Start RStudio server
-CMD ["rserver"]
+# run bash
+CMD ["/bin/bash"]

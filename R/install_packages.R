@@ -5,7 +5,6 @@ packages <- c(
   "tidyr",        # For data tidying
   "caret",        # For machine learning modeling
   "randomForest", # For random forests
-  "xgboost",      # For gradient boosting
   "plotly",       # For interactive plots
   "lubridate",    # For date/time manipulation
   "reshape2",     # For data reshaping
@@ -13,10 +12,8 @@ packages <- c(
   "rgl",          # For 3D graphing
   "plot3d",       # For 3D scatter plots
   "threejs",      # For interactive 3D graphics
-  "maps",         # For geographic maps
-  "htmlwidgets",  # For creating interactive widgets
-  "stringr",      # For string manipulation
-  "CARAT"         # For correlation analysis
+  "tidyverse",
+  "stringr"
 )
 
 # Install packages
